@@ -6,6 +6,15 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		7483220F2DD64E1600588BE5 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 7483220E2DD64E1600588BE5 /* Alamofire */; };
+		7483221D2DD64FEF00588BE5 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 7483221C2DD64FEF00588BE5 /* Kingfisher */; };
+		748322252DD65F7A00588BE5 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 748322242DD65F7A00588BE5 /* RxSwift */; };
+		7483222A2DD660BF00588BE5 /* NVActivityIndicatorView in Frameworks */ = {isa = PBXBuildFile; productRef = 748322292DD660BF00588BE5 /* NVActivityIndicatorView */; };
+		7483222C2DD660BF00588BE5 /* NVActivityIndicatorViewExtended in Frameworks */ = {isa = PBXBuildFile; productRef = 7483222B2DD660BF00588BE5 /* NVActivityIndicatorViewExtended */; };
+		748322372DD6714700588BE5 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 748322362DD6714700588BE5 /* IQKeyboardManagerSwift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		748321E02DD643FA00588BE5 /* Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -36,6 +45,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7483222A2DD660BF00588BE5 /* NVActivityIndicatorView in Frameworks */,
+				748322252DD65F7A00588BE5 /* RxSwift in Frameworks */,
+				7483221D2DD64FEF00588BE5 /* Kingfisher in Frameworks */,
+				7483220F2DD64E1600588BE5 /* Alamofire in Frameworks */,
+				7483222C2DD660BF00588BE5 /* NVActivityIndicatorViewExtended in Frameworks */,
+				748322372DD6714700588BE5 /* IQKeyboardManagerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +93,12 @@
 			);
 			name = Weather;
 			packageProductDependencies = (
+				7483220E2DD64E1600588BE5 /* Alamofire */,
+				7483221C2DD64FEF00588BE5 /* Kingfisher */,
+				748322242DD65F7A00588BE5 /* RxSwift */,
+				748322292DD660BF00588BE5 /* NVActivityIndicatorView */,
+				7483222B2DD660BF00588BE5 /* NVActivityIndicatorViewExtended */,
+				748322362DD6714700588BE5 /* IQKeyboardManagerSwift */,
 			);
 			productName = Weather;
 			productReference = 748321E02DD643FA00588BE5 /* Weather.app */;
@@ -107,6 +128,13 @@
 			);
 			mainGroup = 748321D72DD643FA00588BE5;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				7483220D2DD64E1600588BE5 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				7483221B2DD64FEF00588BE5 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				748322232DD65F7A00588BE5 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				748322282DD660BF00588BE5 /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */,
+				748322352DD6714700588BE5 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 748321E12DD643FA00588BE5 /* Products */;
 			projectDirPath = "";
@@ -149,9 +177,10 @@
 				INFOPLIST_FILE = Weather/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Weather;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -176,9 +205,10 @@
 				INFOPLIST_FILE = Weather/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Weather;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -333,6 +363,82 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7483220D2DD64E1600588BE5 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.2;
+			};
+		};
+		7483221B2DD64FEF00588BE5 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.3.2;
+			};
+		};
+		748322232DD65F7A00588BE5 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.9.0;
+			};
+		};
+		748322282DD660BF00588BE5 /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ninjaprox/NVActivityIndicatorView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.2.0;
+			};
+		};
+		748322352DD6714700588BE5 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7483220E2DD64E1600588BE5 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7483220D2DD64E1600588BE5 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		7483221C2DD64FEF00588BE5 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7483221B2DD64FEF00588BE5 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		748322242DD65F7A00588BE5 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 748322232DD65F7A00588BE5 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		748322292DD660BF00588BE5 /* NVActivityIndicatorView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 748322282DD660BF00588BE5 /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */;
+			productName = NVActivityIndicatorView;
+		};
+		7483222B2DD660BF00588BE5 /* NVActivityIndicatorViewExtended */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 748322282DD660BF00588BE5 /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */;
+			productName = NVActivityIndicatorViewExtended;
+		};
+		748322362DD6714700588BE5 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 748322352DD6714700588BE5 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 748321D82DD643FA00588BE5 /* Project object */;
 }
